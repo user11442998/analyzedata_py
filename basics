@@ -1,0 +1,30 @@
+
+#####################read a csv file 
+
+import pandas as pd
+from pandas import ExcelWriter
+from pandas import ExcelFile
+
+# load the csv into the Pandas Dataframe structure
+#example: csv file is has 30 records of receipt transactions: total_bill, tippercent, day, course
+
+df = pd.read_csv('tips-scripts.csv')
+
+
+#print row indices and column headers
+print(df.index)
+print(df.columns)
+
+############compute new variable for df
+
+##compute a new column as the product of two columns 
+##example: compute a variable for total bill that includes tip amount
+
+totalwtip = df.total_bill * df.tippercent
+
+df.['totalwtip'] = totalwtip + df.total_bill
+
+##Find the total sales for days of the month
+
+
+
