@@ -1,2 +1,2 @@
 # pybeginner_csv
-how to manipulate csv files in panda
+This repository will provide instructions and examples of how to manipulate information in csv files for analysis in python using pandas.
