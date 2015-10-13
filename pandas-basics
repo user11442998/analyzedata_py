@@ -1,5 +1,6 @@
+###########pandas basics guide
 
-#####################read a csv file 
+###########how to read a csv file 
 
 import pandas as pd
 from pandas import ExcelWriter
